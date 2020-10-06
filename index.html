@@ -5,49 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Diagnostic Assesment</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <div class="flexbox-container">
-        <section class="flexbox-item">
-            <h1>Luna Perry</h1>
-            <p>FEW Assessment</p>
-        </section>
-
-        <section class="flexbox-item">
-            <label> Width:
-                <input type="number" name="Width">
-            </label>
-            <label> Height:
-                <input type="number" name="Height">
-            </label>
-            <label> Color:
-                <input type="color" name="Color">
-            </label>
-        </section>
+    <div class="row">
+        <div class="column">
+            <div class="content">
+                <h1>Luna Perry</h1>
+                <p>FEW Assessment</p>
+            </div>
+        </div>
+        <div class="column">
+            <form id="user-input">
+                <label>Width:</label>
+                <input type="number" id="box-width" value="100" />
+                <label>Height:</label>
+                <input type="number" id="box-height" value="100" />
+                <label>Color:</label>
+                <input type="color" id="box-color" value="#e66465" />
+            </form>
+        </div>
     </div>
-
-    <div class="flexbox-container">        
-        <section class="flexbox-item">
-            <label> 
-                <h1>Width</h1>
-                <div id=""></div>
-            </label>
-            <label> 
-                <h1>Height</h1>
-                <div id=""></div>
-            </label>
-            <label> 
-                <h1>Color</h1>
-                <div id=""></div>
-            </label>
-        </section>
-            
-        <section class="flexbox-item">
-            <label> 
-                <h1>Color</h1>
-
-            </label>
-        </section>
+    <div class="row">
+        <div class="column">
+            <div id="display-info"></div>
+        </div>
+        <div class="column">
+            <div id="draw-info"></div>
+        </div>
     </div>
+    <script src="script.js" defer>
+
+    </script>
 </body>
 </html>
